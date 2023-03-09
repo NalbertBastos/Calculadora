@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="calculadoraEstilo.css" media="screen" />
+</head>
+<body>
+    <h1 onclick="mudacor()" id="titulo">Calculadora</h1>
+
+    <script>
+        function soma(){
+            let num1 = document.getElementById('entrada');
+            let num2 = document.getElementById('entrada2');
+            let n1 = Number(num1.value);
+            let n2 = Number(num2.value);
+            let res = document.getElementById('resposta');
+ 
+            if(num1.value.length == 0){
+                alert('[ERRO] Sem primeiro valor')
+            }else if(num2.value.length == 0){
+                alert('[ERRO] Sem segundo valor')
+            }else{
+                res.innerHTML = n1 + n2
+            }
+        }
+        function sub(){
+            let num1 = document.getElementById('entrada');
+            let num2 = document.getElementById('entrada2');
+            let n1 = Number(num1.value);
+            let n2 = Number(num2.value);
+            let res = document.getElementById('resposta');
+            
+            if(num1.value.length == 0){
+                alert('[ERRO] Sem primeiro valor')
+            }else if(num2.value.length == 0){
+                alert('[ERRO] Sem segundo valor')
+            }else{
+                res.innerHTML = n1 - n2 
+            } 
+            /*if(res.value.length >= 9 && res.value.length <=14 ){
+                document.getElementById('resposta').style.fontSize = '15pt'
+                
+            } else if(res.value.length >=15){
+                document.getElementById('resposta').style.fontSize = '10pt'
+            }
+            res.innerHTML = n1 - n2*/
+        }
+        function mult(){
+            let num1 = document.getElementById('entrada');
+            let num2 = document.getElementById('entrada2');
+            let n1 = Number(num1.value);
+            let n2 = Number(num2.value);
+            let res = document.getElementById('resposta');
+
+            if(num1.value.length == 0){
+                alert('[ERRO] Sem primeiro valor')
+            }else if(num2.value.length == 0){
+                alert('[ERRO] Sem segundo valor')
+            }else{
+                res.innerHTML = n1 * n2;
+            }
+        }
+        function divi(){
+            let num1 = document.getElementById('entrada');
+            let num2 = document.getElementById('entrada2');
+            let n1 = Number(num1.value);
+            let n2 = Number(num2.value);
+            let res = document.getElementById('resposta');
+            if(num1.value.length == 0){
+                alert('[ERRO] Sem primeiro valor')
+            }else if(num2.value.length == 0){
+                alert('[ERRO] Sem segundo valor')
+            }else{
+                res.innerHTML = n1 / n2 
+            }    
+        }
+        function port(){
+            let num1 = document.getElementById('entrada');
+            let num2 = document.getElementById('entrada2');
+            let n1 = Number(num1.value);
+            let n2 = Number(num2.value);
+            let res = document.getElementById('resposta');
+            if(num1.value.length == 0){
+                alert('[ERRO] Sem primeiro valor')
+            }else if(num2.value.length == 0){
+                alert('[ERRO] Sem segundo valor')
+            }else{
+                res.innerHTML = (n1*n2)/100
+            }
+        }
+        function pot(){
+            let num1 = document.getElementById('entrada');
+            let num2 = document.getElementById('entrada2');
+            let n1 = Number(num1.value);
+            let n2 = Number(num2.value);
+            let res = document.getElementById('resposta');
+            if(num1.value.length == 0){
+                alert('[ERRO] Sem primeiro valor')
+            }else if(num2.value.length == 0){
+                alert('[ERRO] Sem segundo valor')
+            }else{
+                res.innerHTML = Math.pow(n1,n2) 
+            }
+        }
+        function mudacor(){
+            document.getElementById("titulo").style.color = 'rgb(24, 24, 53)';
+        }
+    </script>
+
+    <div>
+        
+        <input type="number" name="entrada" id="entrada" onmouseenter="cor()"> <br>
+        <input type="number" name="entrada2" id="entrada2"><br> <br>
+        
+        <section id="resposta"> &shy;</section><br><br>
+
+        <input type="button" value="Somar +" onclick="soma()" class="botão">
+        <input type="button" value="Subtrair -" onclick="sub()" class="botão">
+        <input type="button" value="Multiplicar X" onclick="mult()" class="botão">
+        <input type="button" value="Dividir /" onclick="divi()" class="botão">
+        <input type="button" value="Porcentagem %" onclick="port()" class="botão">
+        <input type="button" value="Potência X*" onclick="pot()" class="botão">
+        <br> <br>
+
+       <footer> &copy; <span> Nalbert Bastos dos Santos</span></footer>
+    </div>
+    
+</body>
+</html>
