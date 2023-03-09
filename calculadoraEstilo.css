@@ -1,0 +1,94 @@
+@font-face{
+         font-family: "ceviche";
+         src: url("/fonts/CevicheOne-Regular.ttf");
+        }
+        @font-face{
+         font-family: computo ;
+         src: url("/fonts/ComputoMonospace-p73xO.ttf");
+        }
+        @font-face{
+         font-family: cursed;
+         src: url("/fonts/CursedTimerUlil-Aznm.ttf");
+        }
+        @font-face{
+         font-family: lcd;
+         src: url("/fonts/LcdSolid-VPzB.ttf");
+        }
+        body{
+            background-color: rgb(2, 146, 95);
+        }
+        h1{
+            font-family:computo;
+            color: rgb(0, 0, 0);
+            font-size: 36pt;
+            text-align: center;
+            text-shadow: grey 1px 6px 8px;
+        }
+        div{
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px 2px grey;
+            width: 420px;
+            height: 600px;
+            background-color: rgb(5, 20, 5);
+            margin: auto;
+        }
+        #resposta{
+            background-color: rgb(0, 0, 0);
+            box-shadow: 1px 1px 8px 3px rgb(0, 0, 0);
+            width: 400px;
+            height: 100px;
+            margin: auto;
+            border: solid rgb(36, 22, 22) 5px;
+            font-family: lcd;
+            color: white;
+            font-size: 20pt;
+            text-align: center;    
+        }
+        #resposta:hover{
+            background-color: rgb(10, 10, 10);
+            color: rgb(24, 24, 53);
+        }
+        #entrada{
+            position: relative;
+            display: block;
+            border-radius: 5px;
+            margin: auto;
+            background-color: rgba(90, 31, 31, 0.644);
+            color: white;
+            font-family: lcd;
+        }
+        #entrada:hover{
+            background-color: rgb(56, 56, 56);
+        }
+        #entrada2{
+            position: relative;
+            display: block;
+            border-radius: 5px;
+            margin: auto; 
+            background-color: rgba(90, 31, 31, 0.644);
+            color: white;
+            font-family: lcd;
+        }
+        #entrada2:hover{
+            background-color: rgb(56, 56, 56) ;
+        }
+        .botão{
+            background-color: tomato;
+            margin-top: 60px;
+            border-radius: 10px;
+            font-family: lcd;
+            color: black;
+            display:inline;
+        }
+        .botão:hover{
+            background-color: rgb(128, 132, 126);
+            text-decoration: underline;
+        }
+        footer{
+            color: white;
+            margin-top: 45px; 
+            
+        }
+        span{
+           font-family: lcd; 
+        }
